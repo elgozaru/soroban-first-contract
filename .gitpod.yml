@@ -14,10 +14,10 @@ github:
 image:
     file: .gitpod.dockerfile
 
-tasks:
-    - init: |
-              npm install
-              gp sync-done installation
-      command: cargo test
-    - init: gp sync-await installation
-      command: stellar contract optimize --wasm target/wasm32-unknown-unknown/release/hello_world.wasm
+#tasks:
+#    - init: |
+#              npm install
+#              gp sync-done installation
+#      command: cargo test
+#    - init: gp sync-await installation
+#      command: stellar contract optimize --wasm target/wasm32-unknown-unknown/release/hello_world.wasm
